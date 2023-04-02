@@ -1,0 +1,126 @@
+.twitter-post-tile-container {
+  display: flex;
+  overflow-y: scroll;
+  padding: 16px;
+  width: 50%;
+  max-width: 50%;
+}
+
+.user {
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    color: #fff;
+    font-size: 50px;
+}
+
+.profImg {
+    height: 30%;
+    width: 30%;
+    border-radius: 150px;
+}
+
+.ff {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.predicted {
+    color: aliceblue;
+    font-size: 40px;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.twitter-post-tile {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 300px;
+  margin-right: 16px;
+  padding: 16px;
+}
+
+.twitter-post-tile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.twitter-post-tile-sentiment {
+  font-weight: bold;
+}
+
+.twitter-post-tile-likes,
+.twitter-post-tile-retweets {
+  color: #657786;
+}
+
+.twitter-post-tile-body {
+  margin-bottom: 8px;
+}
+
+.twitter-post-tile-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #14171a;
+}
+
+.twitter-post-tile-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.twitter-post-tile-predicted-likes,
+.twitter-post-tile-predicted-retweets {
+  color: #657786;
+}
+
+
+.twitter-post-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  
+  .twitter-post-tile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(50% - 16px);
+    margin: 8px;
+    padding: 16px;
+  }
+  
+  .twitter-post-tile:nth-child(even) {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .twitter-post-tile {
+      flex: 0 0 calc(33.333% - 16px);
+    }
+  
+    .twitter-post-tile:nth-child(even) {
+      margin-left: 16px;
+    }
+  }
+  
